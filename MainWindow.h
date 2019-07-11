@@ -96,7 +96,7 @@ namespace calculator {
 		/// </summary>
 		System::ComponentModel::Container ^components;
 
-#pragma region Windows Form Designer generated code
+		#pragma region Windows Form Designer generated code
 		/// <summary>
 		/// Required method for Designer support - do not modify
 		/// the contents of this method with the code editor.
@@ -133,6 +133,7 @@ namespace calculator {
 			this->display->Name = L"display";
 			this->display->Size = System::Drawing::Size(178, 31);
 			this->display->TabIndex = 0;
+			this->display->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
 			// 
 			// button7
 			// 
@@ -142,6 +143,7 @@ namespace calculator {
 			this->button7->TabIndex = 1;
 			this->button7->Text = L"7";
 			this->button7->UseVisualStyleBackColor = true;
+			this->button7->Click += gcnew System::EventHandler(this, &MainWindow::Button7_Click);
 			// 
 			// button8
 			// 
@@ -151,6 +153,7 @@ namespace calculator {
 			this->button8->TabIndex = 2;
 			this->button8->Text = L"8";
 			this->button8->UseVisualStyleBackColor = true;
+			this->button8->Click += gcnew System::EventHandler(this, &MainWindow::Button8_Click);
 			// 
 			// button9
 			// 
@@ -160,6 +163,7 @@ namespace calculator {
 			this->button9->TabIndex = 3;
 			this->button9->Text = L"9";
 			this->button9->UseVisualStyleBackColor = true;
+			this->button9->Click += gcnew System::EventHandler(this, &MainWindow::Button9_Click);
 			// 
 			// buttonDivision
 			// 
@@ -178,6 +182,7 @@ namespace calculator {
 			this->button4->TabIndex = 5;
 			this->button4->Text = L"4";
 			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &MainWindow::Button4_Click);
 			// 
 			// button5
 			// 
@@ -187,6 +192,7 @@ namespace calculator {
 			this->button5->TabIndex = 6;
 			this->button5->Text = L"5";
 			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Click += gcnew System::EventHandler(this, &MainWindow::Button5_Click);
 			// 
 			// button6
 			// 
@@ -196,6 +202,7 @@ namespace calculator {
 			this->button6->TabIndex = 7;
 			this->button6->Text = L"6";
 			this->button6->UseVisualStyleBackColor = true;
+			this->button6->Click += gcnew System::EventHandler(this, &MainWindow::Button6_Click);
 			// 
 			// buttonMultiply
 			// 
@@ -214,6 +221,7 @@ namespace calculator {
 			this->button1->TabIndex = 9;
 			this->button1->Text = L"1";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &MainWindow::Button1_Click);
 			// 
 			// button2
 			// 
@@ -223,6 +231,7 @@ namespace calculator {
 			this->button2->TabIndex = 10;
 			this->button2->Text = L"2";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &MainWindow::Button2_Click);
 			// 
 			// button3
 			// 
@@ -232,6 +241,7 @@ namespace calculator {
 			this->button3->TabIndex = 11;
 			this->button3->Text = L"3";
 			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &MainWindow::Button3_Click);
 			// 
 			// buttonRemains
 			// 
@@ -250,7 +260,7 @@ namespace calculator {
 			this->button0->TabIndex = 13;
 			this->button0->Text = L"0";
 			this->button0->UseVisualStyleBackColor = true;
-			this->button0->Click += gcnew System::EventHandler(this, &MainWindow::Button13_Click);
+			this->button0->Click += gcnew System::EventHandler(this, &MainWindow::Button0_Click);
 			// 
 			// buttonSign
 			// 
@@ -305,7 +315,6 @@ namespace calculator {
 			this->buttonResult->TabIndex = 19;
 			this->buttonResult->Text = L"=";
 			this->buttonResult->UseVisualStyleBackColor = true;
-			this->buttonResult->Click += gcnew System::EventHandler(this, &MainWindow::Button17_Click);
 			// 
 			// MainWindow
 			// 
@@ -340,10 +349,46 @@ namespace calculator {
 			this->PerformLayout();
 
 		}
-#pragma endregion
-	private: System::Void Button13_Click(System::Object^ sender, System::EventArgs^ e) {
-	}
-private: System::Void Button17_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-};
+		#pragma endregion
+
+		private: System::Void Button0_Click(System::Object^ sender, System::EventArgs^ e) {
+			this->display->Text = this->display->Text + "0";
+		}
+
+		private: System::Void Button1_Click(System::Object^ sender, System::EventArgs^ e) {
+			this->display->Text = this->display->Text + "1";
+		}
+
+		private: System::Void Button2_Click(System::Object^ sender, System::EventArgs^ e) {
+			this->display->Text = this->display->Text + "2";
+		}
+
+		private: System::Void Button3_Click(System::Object^ sender, System::EventArgs^ e) {
+			this->display->Text = this->display->Text + "3";
+		}
+
+		private: System::Void Button4_Click(System::Object^ sender, System::EventArgs^ e) {
+			this->display->Text = this->display->Text + "4";
+		}
+
+		private: System::Void Button5_Click(System::Object^ sender, System::EventArgs^ e) {
+			this->display->Text = this->display->Text + "5";
+		}
+
+		private: System::Void Button6_Click(System::Object^ sender, System::EventArgs^ e) {
+			this->display->Text = this->display->Text + "6";
+		}
+
+		private: System::Void Button7_Click(System::Object^ sender, System::EventArgs^ e) {
+			this->display->Text = this->display->Text + "7";
+		}
+
+		private: System::Void Button8_Click(System::Object^ sender, System::EventArgs^ e) {
+			this->display->Text = this->display->Text + "8";
+		}
+
+		private: System::Void Button9_Click(System::Object^ sender, System::EventArgs^ e) {
+			this->display->Text = this->display->Text + "9";
+		}
+	};
 }
