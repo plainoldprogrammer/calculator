@@ -1,5 +1,7 @@
 #pragma once
 
+#include <iostream>
+
 namespace calculator
 {
 	using namespace System;
@@ -75,19 +77,7 @@ namespace calculator
 				this->buttonClear = (gcnew System::Windows::Forms::Button());
 				this->buttonResult = (gcnew System::Windows::Forms::Button());
 				this->display = (gcnew System::Windows::Forms::TextBox());
-
-				this->SuspendLayout();	
-				
-				// 
-				// display
-				// 
-				this->display->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-				this->display->Location = System::Drawing::Point(12, 12);
-				this->display->Name = L"display";
-				this->display->Size = System::Drawing::Size(178, 31);
-				this->display->TabIndex = 0;
-				this->display->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
-
+				this->SuspendLayout();
 				// 
 				// button0
 				// 
@@ -98,7 +88,7 @@ namespace calculator
 				this->button0->Text = L"0";
 				this->button0->UseVisualStyleBackColor = true;
 				this->button0->Click += gcnew System::EventHandler(this, &MainWindow::Button0_Click);
-
+				this->button0->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &MainWindow::MainWindow_KeyDown);
 				// 
 				// button1
 				// 
@@ -109,7 +99,6 @@ namespace calculator
 				this->button1->Text = L"1";
 				this->button1->UseVisualStyleBackColor = true;
 				this->button1->Click += gcnew System::EventHandler(this, &MainWindow::Button1_Click);
-
 				// 
 				// button2
 				// 
@@ -120,7 +109,6 @@ namespace calculator
 				this->button2->Text = L"2";
 				this->button2->UseVisualStyleBackColor = true;
 				this->button2->Click += gcnew System::EventHandler(this, &MainWindow::Button2_Click);
-
 				// 
 				// button3
 				// 
@@ -131,7 +119,6 @@ namespace calculator
 				this->button3->Text = L"3";
 				this->button3->UseVisualStyleBackColor = true;
 				this->button3->Click += gcnew System::EventHandler(this, &MainWindow::Button3_Click);
-
 				// 
 				// button4
 				// 
@@ -142,7 +129,6 @@ namespace calculator
 				this->button4->Text = L"4";
 				this->button4->UseVisualStyleBackColor = true;
 				this->button4->Click += gcnew System::EventHandler(this, &MainWindow::Button4_Click);
-
 				// 
 				// button5
 				// 
@@ -153,7 +139,6 @@ namespace calculator
 				this->button5->Text = L"5";
 				this->button5->UseVisualStyleBackColor = true;
 				this->button5->Click += gcnew System::EventHandler(this, &MainWindow::Button5_Click);
-
 				// 
 				// button6
 				// 
@@ -164,7 +149,6 @@ namespace calculator
 				this->button6->Text = L"6";
 				this->button6->UseVisualStyleBackColor = true;
 				this->button6->Click += gcnew System::EventHandler(this, &MainWindow::Button6_Click);
-
 				// 
 				// button7
 				// 
@@ -175,7 +159,6 @@ namespace calculator
 				this->button7->Text = L"7";
 				this->button7->UseVisualStyleBackColor = true;
 				this->button7->Click += gcnew System::EventHandler(this, &MainWindow::Button7_Click);
-
 				// 
 				// button8
 				// 
@@ -186,7 +169,6 @@ namespace calculator
 				this->button8->Text = L"8";
 				this->button8->UseVisualStyleBackColor = true;
 				this->button8->Click += gcnew System::EventHandler(this, &MainWindow::Button8_Click);
-
 				// 
 				// button9
 				// 
@@ -197,7 +179,6 @@ namespace calculator
 				this->button9->Text = L"9";
 				this->button9->UseVisualStyleBackColor = true;
 				this->button9->Click += gcnew System::EventHandler(this, &MainWindow::Button9_Click);
-
 				// 
 				// buttonDivision
 				// 
@@ -207,7 +188,6 @@ namespace calculator
 				this->buttonDivision->TabIndex = 4;
 				this->buttonDivision->Text = L"/";
 				this->buttonDivision->UseVisualStyleBackColor = true;
-
 				// 
 				// buttonMultiply
 				// 
@@ -217,7 +197,6 @@ namespace calculator
 				this->buttonMultiply->TabIndex = 8;
 				this->buttonMultiply->Text = L"*";
 				this->buttonMultiply->UseVisualStyleBackColor = true;
-
 				// 
 				// buttonRemains
 				// 
@@ -227,7 +206,6 @@ namespace calculator
 				this->buttonRemains->TabIndex = 12;
 				this->buttonRemains->Text = L"-";
 				this->buttonRemains->UseVisualStyleBackColor = true;
-
 				// 
 				// buttonSum
 				// 
@@ -237,7 +215,6 @@ namespace calculator
 				this->buttonSum->TabIndex = 16;
 				this->buttonSum->Text = L"+";
 				this->buttonSum->UseVisualStyleBackColor = true;
-
 				// 
 				// buttonSign
 				// 
@@ -247,7 +224,6 @@ namespace calculator
 				this->buttonSign->TabIndex = 14;
 				this->buttonSign->Text = L"+/-";
 				this->buttonSign->UseVisualStyleBackColor = true;
-
 				// 
 				// buttonPoint
 				// 
@@ -257,7 +233,6 @@ namespace calculator
 				this->buttonPoint->TabIndex = 15;
 				this->buttonPoint->Text = L".";
 				this->buttonPoint->UseVisualStyleBackColor = true;
-
 				// 
 				// buttonClearEntry
 				// 
@@ -267,7 +242,6 @@ namespace calculator
 				this->buttonClearEntry->TabIndex = 17;
 				this->buttonClearEntry->Text = L"CE";
 				this->buttonClearEntry->UseVisualStyleBackColor = true;
-
 				// 
 				// buttonClear
 				// 
@@ -277,7 +251,6 @@ namespace calculator
 				this->buttonClear->TabIndex = 18;
 				this->buttonClear->Text = L"C";
 				this->buttonClear->UseVisualStyleBackColor = true;
-
 				// 
 				// buttonResult
 				// 
@@ -287,7 +260,17 @@ namespace calculator
 				this->buttonResult->TabIndex = 19;
 				this->buttonResult->Text = L"=";
 				this->buttonResult->UseVisualStyleBackColor = true;
-
+				// 
+				// display
+				// 
+				this->display->Enabled = false;
+				this->display->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+					static_cast<System::Byte>(0)));
+				this->display->Location = System::Drawing::Point(12, 12);
+				this->display->Name = L"display";
+				this->display->Size = System::Drawing::Size(178, 31);
+				this->display->TabIndex = 0;
+				this->display->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
 				// 
 				// MainWindow
 				// 
@@ -314,13 +297,15 @@ namespace calculator
 				this->Controls->Add(this->buttonClear);
 				this->Controls->Add(this->buttonResult);
 				this->Controls->Add(this->display);
-
 				this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::Fixed3D;
+				this->KeyPreview = true;
 				this->MaximizeBox = false;
 				this->Name = L"MainWindow";
 				this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
+				this->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &MainWindow::MainWindow_KeyDown);
 				this->ResumeLayout(false);
 				this->PerformLayout();
+
 			}
 			#pragma endregion
 
@@ -374,8 +359,52 @@ namespace calculator
 				this->display->Text = this->display->Text + "9";
 			}
 
-			private: System::Void MainWindow_Load(System::Object^ sender, System::EventArgs^ e) 
+			System::Void MainWindow_Load(System::Object^ sender, System::EventArgs^ e) 
 			{
+			}
+
+			void MainWindow_KeyDown(Object ^sender, System::Windows::Forms::KeyEventArgs^ e)
+			{
+				if (e->KeyCode == Keys::NumPad0)
+				{
+					this->Button0_Click(sender, e);
+				}
+				else if (e->KeyCode == Keys::NumPad1)
+				{
+					this->Button1_Click(sender, e);
+				}
+				else if (e->KeyCode == Keys::NumPad2)
+				{
+					this->Button2_Click(sender, e);
+				}
+				else if (e->KeyCode == Keys::NumPad3)
+				{
+					this->Button3_Click(sender, e);
+				}
+				else if (e->KeyCode == Keys::NumPad4)
+				{
+					this->Button4_Click(sender, e);
+				}
+				else if (e->KeyCode == Keys::NumPad5)
+				{
+					this->Button5_Click(sender, e);
+				}
+				else if (e->KeyCode == Keys::NumPad6)
+				{
+					this->Button6_Click(sender, e);
+				}
+				else if (e->KeyCode == Keys::NumPad7)
+				{
+					this->Button7_Click(sender, e);
+				}
+				else if (e->KeyCode == Keys::NumPad8)
+				{
+					this->Button8_Click(sender, e);
+				}
+				else if (e->KeyCode == Keys::NumPad9)
+				{
+					this->Button9_Click(sender, e);
+				}
 			}
 	};
 }
