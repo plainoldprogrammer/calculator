@@ -29,6 +29,13 @@ namespace calculator
 			}
 	
 		private:
+			bool isFirstOperandEntered;
+			bool isSecondOperandEntered;
+			double firstOperand;
+			double secondOperand;
+			double result;
+			String ^operation;
+			
 			System::Windows::Forms::Button^ button0;
 			System::Windows::Forms::Button^ button1;
 			System::Windows::Forms::Button^ button2;
@@ -188,6 +195,7 @@ namespace calculator
 				this->buttonDivision->TabIndex = 4;
 				this->buttonDivision->Text = L"/";
 				this->buttonDivision->UseVisualStyleBackColor = true;
+				this->buttonDivision->Click += gcnew System::EventHandler(this, &MainWindow::ButtonDivision_Click);
 				// 
 				// buttonMultiply
 				// 
@@ -197,6 +205,7 @@ namespace calculator
 				this->buttonMultiply->TabIndex = 8;
 				this->buttonMultiply->Text = L"*";
 				this->buttonMultiply->UseVisualStyleBackColor = true;
+				this->buttonMultiply->Click += gcnew System::EventHandler(this, &MainWindow::ButtonMultiply_Click);
 				// 
 				// buttonRemains
 				// 
@@ -206,6 +215,7 @@ namespace calculator
 				this->buttonRemains->TabIndex = 12;
 				this->buttonRemains->Text = L"-";
 				this->buttonRemains->UseVisualStyleBackColor = true;
+				this->buttonRemains->Click += gcnew System::EventHandler(this, &MainWindow::ButtonRemains_Click);
 				// 
 				// buttonSum
 				// 
@@ -215,6 +225,7 @@ namespace calculator
 				this->buttonSum->TabIndex = 16;
 				this->buttonSum->Text = L"+";
 				this->buttonSum->UseVisualStyleBackColor = true;
+				this->buttonSum->Click += gcnew System::EventHandler(this, &MainWindow::ButtonSum_Click);
 				// 
 				// buttonSign
 				// 
@@ -260,6 +271,7 @@ namespace calculator
 				this->buttonResult->TabIndex = 19;
 				this->buttonResult->Text = L"=";
 				this->buttonResult->UseVisualStyleBackColor = true;
+				this->buttonResult->Click += gcnew System::EventHandler(this, &MainWindow::ButtonResult_Click);
 				// 
 				// display
 				// 
@@ -406,5 +418,57 @@ namespace calculator
 					this->Button9_Click(sender, e);
 				}
 			}
-	};
+
+			System::Void ButtonDivision_Click(System::Object^ sender, System::EventArgs^ e)
+			{
+				firstOperand = System::Convert::ToDouble(this->display->Text);
+				this->display->Text = "";
+				operation = "division";
+			}
+
+			System::Void ButtonMultiply_Click(System::Object^ sender, System::EventArgs^ e)
+			{
+				firstOperand = System::Convert::ToDouble(this->display->Text);
+				this->display->Text = "";
+				operation = "multiply";
+			}
+
+			Void ButtonRemains_Click(System::Object^ sender, System::EventArgs^ e)
+			{
+				firstOperand = System::Convert::ToDouble(this->display->Text);
+				this->display->Text = "";
+				operation = "remains";
+			}
+
+			System::Void ButtonSum_Click(System::Object^ sender, System::EventArgs^ e) 
+			{
+				firstOperand = System::Convert::ToDouble(this->display->Text);
+				this->display->Text = "";
+				operation = "sum";
+			}
+
+			System::Void ButtonResult_Click(System::Object^ sender, System::EventArgs^ e)
+			{
+				secondOperand = System::Convert::ToDouble(this->display->Text);
+			
+				if (operation->Equals("division"))
+				{
+					result = this->firstOperand / this->secondOperand;
+				}
+				else if (operation->Equals("multiply"))
+				{
+					result = this->firstOperand * this->secondOperand;
+				}
+				else if (operation->Equals("remains"))
+				{
+					result = this->firstOperand - this->secondOperand;
+				}
+				else if (operation->Equals("sum"))
+				{
+					result = this->firstOperand + this->secondOperand;
+				}
+
+				this->display->Text = System::Convert::ToString(result);
+			}
+};
 }
