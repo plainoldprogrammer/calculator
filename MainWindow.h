@@ -88,9 +88,10 @@ namespace calculator
 				// 
 				// button0
 				// 
-				this->button0->Location = System::Drawing::Point(12, 250);
+				this->button0->Location = System::Drawing::Point(16, 308);
+				this->button0->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 				this->button0->Name = L"button0";
-				this->button0->Size = System::Drawing::Size(40, 40);
+				this->button0->Size = System::Drawing::Size(53, 49);
 				this->button0->TabIndex = 13;
 				this->button0->Text = L"0";
 				this->button0->UseVisualStyleBackColor = true;
@@ -99,9 +100,10 @@ namespace calculator
 				// 
 				// button1
 				// 
-				this->button1->Location = System::Drawing::Point(12, 204);
+				this->button1->Location = System::Drawing::Point(16, 251);
+				this->button1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 				this->button1->Name = L"button1";
-				this->button1->Size = System::Drawing::Size(40, 40);
+				this->button1->Size = System::Drawing::Size(53, 49);
 				this->button1->TabIndex = 9;
 				this->button1->Text = L"1";
 				this->button1->UseVisualStyleBackColor = true;
@@ -109,9 +111,10 @@ namespace calculator
 				// 
 				// button2
 				// 
-				this->button2->Location = System::Drawing::Point(58, 204);
+				this->button2->Location = System::Drawing::Point(77, 251);
+				this->button2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 				this->button2->Name = L"button2";
-				this->button2->Size = System::Drawing::Size(40, 40);
+				this->button2->Size = System::Drawing::Size(53, 49);
 				this->button2->TabIndex = 10;
 				this->button2->Text = L"2";
 				this->button2->UseVisualStyleBackColor = true;
@@ -119,9 +122,10 @@ namespace calculator
 				// 
 				// button3
 				// 
-				this->button3->Location = System::Drawing::Point(104, 205);
+				this->button3->Location = System::Drawing::Point(139, 252);
+				this->button3->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 				this->button3->Name = L"button3";
-				this->button3->Size = System::Drawing::Size(40, 40);
+				this->button3->Size = System::Drawing::Size(53, 49);
 				this->button3->TabIndex = 11;
 				this->button3->Text = L"3";
 				this->button3->UseVisualStyleBackColor = true;
@@ -129,9 +133,10 @@ namespace calculator
 				// 
 				// button4
 				// 
-				this->button4->Location = System::Drawing::Point(12, 158);
+				this->button4->Location = System::Drawing::Point(16, 194);
+				this->button4->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 				this->button4->Name = L"button4";
-				this->button4->Size = System::Drawing::Size(40, 40);
+				this->button4->Size = System::Drawing::Size(53, 49);
 				this->button4->TabIndex = 5;
 				this->button4->Text = L"4";
 				this->button4->UseVisualStyleBackColor = true;
@@ -139,9 +144,10 @@ namespace calculator
 				// 
 				// button5
 				// 
-				this->button5->Location = System::Drawing::Point(58, 158);
+				this->button5->Location = System::Drawing::Point(77, 194);
+				this->button5->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 				this->button5->Name = L"button5";
-				this->button5->Size = System::Drawing::Size(40, 40);
+				this->button5->Size = System::Drawing::Size(53, 49);
 				this->button5->TabIndex = 6;
 				this->button5->Text = L"5";
 				this->button5->UseVisualStyleBackColor = true;
@@ -149,9 +155,10 @@ namespace calculator
 				// 
 				// button6
 				// 
-				this->button6->Location = System::Drawing::Point(104, 158);
+				this->button6->Location = System::Drawing::Point(139, 194);
+				this->button6->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 				this->button6->Name = L"button6";
-				this->button6->Size = System::Drawing::Size(40, 40);
+				this->button6->Size = System::Drawing::Size(53, 49);
 				this->button6->TabIndex = 7;
 				this->button6->Text = L"6";
 				this->button6->UseVisualStyleBackColor = true;
@@ -159,9 +166,10 @@ namespace calculator
 				// 
 				// button7
 				// 
-				this->button7->Location = System::Drawing::Point(12, 112);
+				this->button7->Location = System::Drawing::Point(16, 138);
+				this->button7->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 				this->button7->Name = L"button7";
-				this->button7->Size = System::Drawing::Size(40, 40);
+				this->button7->Size = System::Drawing::Size(53, 49);
 				this->button7->TabIndex = 1;
 				this->button7->Text = L"7";
 				this->button7->UseVisualStyleBackColor = true;
@@ -169,9 +177,10 @@ namespace calculator
 				// 
 				// button8
 				// 
-				this->button8->Location = System::Drawing::Point(59, 112);
+				this->button8->Location = System::Drawing::Point(77, 138);
+				this->button8->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 				this->button8->Name = L"button8";
-				this->button8->Size = System::Drawing::Size(40, 40);
+				this->button8->Size = System::Drawing::Size(53, 49);
 				this->button8->TabIndex = 2;
 				this->button8->Text = L"8";
 				this->button8->UseVisualStyleBackColor = true;
@@ -179,9 +188,10 @@ namespace calculator
 				// 
 				// button9
 				// 
-				this->button9->Location = System::Drawing::Point(104, 112);
+				this->button9->Location = System::Drawing::Point(139, 138);
+				this->button9->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 				this->button9->Name = L"button9";
-				this->button9->Size = System::Drawing::Size(40, 40);
+				this->button9->Size = System::Drawing::Size(53, 49);
 				this->button9->TabIndex = 3;
 				this->button9->Text = L"9";
 				this->button9->UseVisualStyleBackColor = true;
@@ -189,9 +199,10 @@ namespace calculator
 				// 
 				// buttonDivision
 				// 
-				this->buttonDivision->Location = System::Drawing::Point(150, 112);
+				this->buttonDivision->Location = System::Drawing::Point(200, 138);
+				this->buttonDivision->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 				this->buttonDivision->Name = L"buttonDivision";
-				this->buttonDivision->Size = System::Drawing::Size(40, 40);
+				this->buttonDivision->Size = System::Drawing::Size(53, 49);
 				this->buttonDivision->TabIndex = 4;
 				this->buttonDivision->Text = L"/";
 				this->buttonDivision->UseVisualStyleBackColor = true;
@@ -199,9 +210,10 @@ namespace calculator
 				// 
 				// buttonMultiply
 				// 
-				this->buttonMultiply->Location = System::Drawing::Point(150, 158);
+				this->buttonMultiply->Location = System::Drawing::Point(200, 194);
+				this->buttonMultiply->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 				this->buttonMultiply->Name = L"buttonMultiply";
-				this->buttonMultiply->Size = System::Drawing::Size(40, 40);
+				this->buttonMultiply->Size = System::Drawing::Size(53, 49);
 				this->buttonMultiply->TabIndex = 8;
 				this->buttonMultiply->Text = L"*";
 				this->buttonMultiply->UseVisualStyleBackColor = true;
@@ -209,9 +221,10 @@ namespace calculator
 				// 
 				// buttonRemains
 				// 
-				this->buttonRemains->Location = System::Drawing::Point(150, 205);
+				this->buttonRemains->Location = System::Drawing::Point(200, 252);
+				this->buttonRemains->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 				this->buttonRemains->Name = L"buttonRemains";
-				this->buttonRemains->Size = System::Drawing::Size(40, 40);
+				this->buttonRemains->Size = System::Drawing::Size(53, 49);
 				this->buttonRemains->TabIndex = 12;
 				this->buttonRemains->Text = L"-";
 				this->buttonRemains->UseVisualStyleBackColor = true;
@@ -219,9 +232,10 @@ namespace calculator
 				// 
 				// buttonSum
 				// 
-				this->buttonSum->Location = System::Drawing::Point(150, 250);
+				this->buttonSum->Location = System::Drawing::Point(200, 308);
+				this->buttonSum->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 				this->buttonSum->Name = L"buttonSum";
-				this->buttonSum->Size = System::Drawing::Size(40, 40);
+				this->buttonSum->Size = System::Drawing::Size(53, 49);
 				this->buttonSum->TabIndex = 16;
 				this->buttonSum->Text = L"+";
 				this->buttonSum->UseVisualStyleBackColor = true;
@@ -229,45 +243,50 @@ namespace calculator
 				// 
 				// buttonSign
 				// 
-				this->buttonSign->Location = System::Drawing::Point(58, 250);
+				this->buttonSign->Location = System::Drawing::Point(77, 308);
+				this->buttonSign->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 				this->buttonSign->Name = L"buttonSign";
-				this->buttonSign->Size = System::Drawing::Size(40, 40);
+				this->buttonSign->Size = System::Drawing::Size(53, 49);
 				this->buttonSign->TabIndex = 14;
 				this->buttonSign->Text = L"+/-";
 				this->buttonSign->UseVisualStyleBackColor = true;
 				// 
 				// buttonPoint
 				// 
-				this->buttonPoint->Location = System::Drawing::Point(104, 251);
+				this->buttonPoint->Location = System::Drawing::Point(139, 309);
+				this->buttonPoint->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 				this->buttonPoint->Name = L"buttonPoint";
-				this->buttonPoint->Size = System::Drawing::Size(40, 40);
+				this->buttonPoint->Size = System::Drawing::Size(53, 49);
 				this->buttonPoint->TabIndex = 15;
 				this->buttonPoint->Text = L".";
 				this->buttonPoint->UseVisualStyleBackColor = true;
 				// 
 				// buttonClearEntry
 				// 
-				this->buttonClearEntry->Location = System::Drawing::Point(12, 66);
+				this->buttonClearEntry->Location = System::Drawing::Point(16, 81);
+				this->buttonClearEntry->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 				this->buttonClearEntry->Name = L"buttonClearEntry";
-				this->buttonClearEntry->Size = System::Drawing::Size(40, 40);
+				this->buttonClearEntry->Size = System::Drawing::Size(53, 49);
 				this->buttonClearEntry->TabIndex = 17;
 				this->buttonClearEntry->Text = L"CE";
 				this->buttonClearEntry->UseVisualStyleBackColor = true;
 				// 
 				// buttonClear
 				// 
-				this->buttonClear->Location = System::Drawing::Point(58, 66);
+				this->buttonClear->Location = System::Drawing::Point(77, 81);
+				this->buttonClear->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 				this->buttonClear->Name = L"buttonClear";
-				this->buttonClear->Size = System::Drawing::Size(40, 40);
+				this->buttonClear->Size = System::Drawing::Size(53, 49);
 				this->buttonClear->TabIndex = 18;
 				this->buttonClear->Text = L"C";
 				this->buttonClear->UseVisualStyleBackColor = true;
 				// 
 				// buttonResult
 				// 
-				this->buttonResult->Location = System::Drawing::Point(105, 66);
+				this->buttonResult->Location = System::Drawing::Point(140, 81);
+				this->buttonResult->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 				this->buttonResult->Name = L"buttonResult";
-				this->buttonResult->Size = System::Drawing::Size(85, 40);
+				this->buttonResult->Size = System::Drawing::Size(113, 49);
 				this->buttonResult->TabIndex = 19;
 				this->buttonResult->Text = L"=";
 				this->buttonResult->UseVisualStyleBackColor = true;
@@ -278,17 +297,18 @@ namespace calculator
 				this->display->Enabled = false;
 				this->display->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 					static_cast<System::Byte>(0)));
-				this->display->Location = System::Drawing::Point(12, 12);
+				this->display->Location = System::Drawing::Point(16, 15);
+				this->display->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 				this->display->Name = L"display";
-				this->display->Size = System::Drawing::Size(178, 31);
+				this->display->Size = System::Drawing::Size(236, 37);
 				this->display->TabIndex = 0;
 				this->display->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
 				// 
 				// MainWindow
 				// 
-				this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+				this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 				this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-				this->ClientSize = System::Drawing::Size(200, 301);
+				this->ClientSize = System::Drawing::Size(267, 370);
 				this->Controls->Add(this->button0);
 				this->Controls->Add(this->button1);
 				this->Controls->Add(this->button2);
@@ -311,6 +331,7 @@ namespace calculator
 				this->Controls->Add(this->display);
 				this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::Fixed3D;
 				this->KeyPreview = true;
+				this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 				this->MaximizeBox = false;
 				this->Name = L"MainWindow";
 				this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
